@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_error"
+    tools:context=".PhotoDetailActivity">
+
+    <TextView
+        android:id="@+id/Location_Photo_Activity"
+        android:layout_width="683dp"
+        android:layout_height="35dp"
+        android:background="@color/purple_700"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Location" />
+
+    <TextView
+        android:id="@+id/Official_Name_Photo_Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Location_Photo_Activity"
+        tools:text="Official Name" />
+
+    <TextView
+        android:id="@+id/Official_Position_Photo_Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Official_Name_Photo_Activity"
+        tools:text="Official Position" />
+
+    <ImageView
+        android:id="@+id/Official_Image_Photo_Activity"
+        android:layout_width="211dp"
+        android:layout_height="260dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Location_Photo_Activity"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/Party_Image_Photo_Activity"
+        android:layout_width="130dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="192dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Official_Image_Photo_Activity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Official_Position_Photo_Activity"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rep_logo"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
